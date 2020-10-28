@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    /* o elemento body passa aqui a ser um flex container assim como todos os filhos dentro 
+    dele, passam a ser flex items. Alinha todos os elementos, dentro do body em linha */
+    display: flex;
+    justify-content: center;
+}
+.instagram-wrapper{
+    display: flex;
+    /* Com essa definição -> align-items: center, faço o alinhamento da vertical 
+    do eixo Y ao centro, os elementos são alinhados no eixo Y ao centro*/    
+    align-items: center;
+    /* justify-content-> mas conhecido como alinhamento no eixo X, alinho
+    os elementos ao centro */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instagram-phone img{
+    height: 50rem;
+}
