@@ -37,3 +37,50 @@ body{
 .instagram-phone img{
     height: 50rem;
 }
+
+.instagram-continue{
+    /* Dispõe os itens no eixo X */
+    display: flex;
+    /* Alinha os itens no eixo Y */
+    align-items: center;
+    /* cria um espaçamento entre os elementos no eixo X*/
+    justify-content: space-around;
+    /* Os itens ficam em uma única coluna um abaixo do outro */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    /* Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início 
+    e o último no final. */
+    justify-content: space-between;
+    /* Alinha os itens no eixo do Flex no centro */
+    align-items: center;
+    /* Dispões os itens no eixo Y */
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+.group:nth-child(1){
+    min-height: 19rem;
+}
+.instagram-logo{
+    height: 3rem;
+}
+.profile-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* overflow: hidden, para ocultar as margens da figura que exceder a div, por decorrência
+    do border-radius */
+    overflow: hidden;
+    
+}
+.profile-photo img{
+    height: 6rem;
+}
